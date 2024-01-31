@@ -18,7 +18,7 @@
       }
     ],
     "paths": {
-      "demoapp/*": ["./src/*"]
+      "@demoapp/*": ["./src/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

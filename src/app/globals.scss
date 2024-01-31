@@ -1,21 +1,61 @@
-@tailwind base;
+// @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-.header {
-  border: 1px solid;
-  height: 70px;
+body {
+  height: 100vh;
   width: 100vw;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
 }
 
-.sidebar {
-  border: 1px solid;
-  height: calc(100vh - 70px);
-  width: 70px;
+.border {
+  border: 1px solid #dadce0;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
 }
 
-.body-class {
-  border: 1px solid;
-  height: calc(100vh - 70px);
-  width: calc(100vh - 70px);
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.justify-start {
+  justify-content: flex-start;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-end {
+  justify-content: flex-end;
+}
+.items-start {
+  align-items: flex-start;
+}
+.items-center {
+  align-items: center;
+}
+.items-end {
+  align-items: flex-end;
+}
+
+.header-component {
+  position: relative;
+  box-sizing: content-box;
+  padding: 10px;
+  height: 80px;
+  width: 100;
+  background-color: #dadce0;
+  .search-box {
+    width: 500px;
+    height: 20px;
+    border-radius: 40px;
+  }
+  .notification {
+    cursor: pointer;
+  }
 }

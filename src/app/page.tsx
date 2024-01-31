@@ -1,17 +1,21 @@
-"use client";
-import { useRouter } from "next/navigation";
+import HeaderPage from "@demoapp/components/header";
+import Link from "next/link";
+
 export default function Home() {
-  const router = useRouter();
+  console.log("im app.tsx");
 
   return (
-    <div className="flex flex-row main-container">
-      <button
-        onClick={() => {
-          router.push("/auth", { scroll: false });
-        }}
-      >
-        Login
-      </button>
+    <div>
+      <p>This is App.tsx page</p>
+      <div>
+        Link to:
+        <p>
+          <Link href={"/blog"}>{" Blog"}</Link>
+        </p>
+        <p>
+          <Link href={"/about"}>{"About "}</Link>
+        </p>
+      </div>
     </div>
   );
 }
