@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.header {
+  border: 1px solid;
+  height: 70px;
+  width: 100vw;
+}
+
+.sidebar {
+  border: 1px solid;
+  height: calc(100vh - 70px);
+  width: 70px;
+}
+
+.body-class {
+  border: 1px solid;
+  height: calc(100vh - 70px);
+  width: calc(100vh - 70px);
+}
